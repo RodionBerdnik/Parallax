@@ -7,29 +7,38 @@
 
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="libs/gsap/gsap.min.js" defer></script>
+    <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
     <script src="js/app.js" defer></script>
 </head>
 <body>
-   <header class="main-header">
-    <div class="layers">
-        <div class="layers__header">
-            <div class="layers__caption">Welcome to Parallax</div>
-            <div class="layers__title">Fairy Forest</div>
-        </div>
-        <div class="layer layers__base" style="background-image: url(img/layer-base.png);"></div>
-        <div class="layer layers__middle" style="background-image: url(img/layer-middle.png);"></div>
-        <div class="layer layers__front" style="background-image: url(img/layer-front.png);"></div>
+   <div class="wrapper">
+    <div class="content">
+        <header class="main-header">
+            <div class="layers">
+                <div class="layers__header">
+                    <div class="layers__caption">Welcome to Parallax</div>
+                    <div class="layers__title">Fairy Forest</div>
+                </div>
+                <div class="layer layers__base" style="background-image: url(img/layer-base.png);"></div>
+                <div class="layer layers__middle" style="background-image: url(img/layer-middle.png);"></div>
+                <div class="layer layers__front" style="background-image: url(img/layer-front.png);"></div>
+            </div>
+           </header>
+           
+           <article class="main-article" style="background-image: url(img/dungeon.jpg);">
+            <div class="main-article__contant">
+                <h2 class="main-article__header">Стив Джобс</h2>
+                <p class="main-article__paragraph">Хвала безумцам. Одиночкам. Бунтарям. Белым воронам. Тем, кто всегда некстати
+                     и невпопад. Тем, кто видит мир иначе. Они не соблюдают правила. Они смеются над устоями. Их можно цитировать,
+                      спорить с ними, восхвалять или проклинать их. Но только игнорировать их невозможно. Ведь они несут перемены.
+                       Они толкают человечество вперёд. И пусть кто-то говорит: «Безумцы», мы говорим: «Гении». Ведь лишь только
+                        безумец верит, что ему под силу изменить мир и потому меняет его</p>
+            </div>
+            <div class="copy">© Radik😊</div>
+           </article>
     </div>
-   </header>
-   
-   <article class="main-article" style="background-image: url(img/dungeon.jpg);">
-    <div class="main-article__contant">
-        <h2 class="main-article__header">To be continued</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse voluptates cupiditate, saepe eos aut fugit distinctio accusamus 
-            facilis. Deleniti sit dicta explicabo doloremque. Velit possimus porro sunt corrupti quidem voluptatum quaerat culpa?</p>
-    </div>
-    <div class="copy">© Radik😊</div>
-   </article>
-
+   </div>
 </body>
 </html>
