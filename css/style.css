@@ -274,7 +274,6 @@
     font-size: calc(var(--index)*.9);
     margin-top: calc(var(--index)/1.25);
     transition: var(--transition);
-    transform: translate3d(0, calc(var(--scrollTop)/7.5), 0);
     transform: var(--main-article-transform);
     will-change: transform;
   }
@@ -289,4 +288,10 @@
     /* opacity: .45; */
     font-size: calc(var(--index)*.75);
     letter-spacing: calc(var(--index)/37.5);
+  }
+
+  @media (max-width: 575.98px) {
+    .main-article__paragraph{
+      font-size: calc(var(--index)*1.1);
+    }
   }
